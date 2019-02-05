@@ -1,0 +1,41 @@
+body {
+    padding: 1rem;
+    width: 1000px;
+    margin: 0 auto;
+  }
+  
+  $color: #000000;
+  $blue: #0087ff;
+  $red: #ff2828;
+  $yellow: #ffe607;
+  
+  @mixin item {
+    display: inline-block;
+    margin: 0 1rem 1rem 0;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 4px;
+    background-color: var(--c);
+  }
+  
+  @mixin circle {
+    border-radius: 50%;
+  }
+  
+  .item {
+    @include item;
+  
+    &.one {
+      --c: #{$blue};
+    }
+  
+    &.two {
+      --c: #{$red};
+      @include circle;
+    }
+  
+    &.three {
+      --c: #{$yellow};
+      @include circle;
+    }
+  }

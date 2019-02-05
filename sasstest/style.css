@@ -1,0 +1,28 @@
+body {
+  padding: 1rem;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.item {
+  display: inline-block;
+  margin: 0 1rem 1rem 0;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 4px;
+  background-color: var(--c);
+}
+
+.item.one {
+  --c: #0087ff;
+}
+
+.item.two {
+  --c: #ff2828;
+  border-radius: 50%;
+}
+
+.item.three {
+  --c: #ffe607;
+  border-radius: 50%;
+}
